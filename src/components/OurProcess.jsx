@@ -1,4 +1,3 @@
-
 const OurProcess = () => {
     return (
         <div className="OurProcess">
@@ -7,16 +6,13 @@ const OurProcess = () => {
                     <div className="col-12">
                         <h6 className="title">
                             <span><img src="./setting.png" alt="" /></span>
-                            OUR PROCESS
+                            QADRIYATLARIMIZ
                         </h6>
                     </div>
                     <div className="col-12">
                         <div className="topWrap">
-                            <h1>Streamlined processes for <span>optimal efficiency</span></h1>
-                            <h2>Our process is designed to maximize efficiency and quality at every stage
-                                of production. By integrating advanced technologies and best practices,
-                                we ensure seamless workflows.
-                            </h2>
+                            <h1>Kelajak sari qadriyatli qadamlar</h1>
+                            <h2>Mijozlarimizga eng yaxshi xizmatni taqdim etish bizning bosh maqsadimizdir. Har bir qarorimiz va harakatimiz ishonchlilik, zamonaviylik va barqaror rivojlanish tamoyillariga asoslanadi.</h2>
                         </div>
                     </div>
                 </div>
@@ -31,28 +27,22 @@ const OurProcess = () => {
                         <div className="wrap">
                             <h3>01</h3>
                             <div>
-                                <h4>Understanding Your Needs</h4>
-                                <h5>We begin by thoroughly assessing your requirements and
-                                    objectives to develop a tailored approach.
-                                </h5>
+                                <h4>Talablaringizni tushunamiz</h4>
+                                <h5>Hamkorlikni sizning ehtiyojlaringiz va maqsadlaringizni chuqur tahlil qilishdan boshlaymiz. Bu asosda moslashuvchan va samarali reja ishlab chiqamiz.</h5>
                             </div>
                         </div>
                         <div className="wrap active">
                             <h3>02</h3>
                             <div>
-                                <h4>Understanding Your Needs</h4>
-                                <h5>We begin by thoroughly assessing your requirements and
-                                    objectives to develop a tailored approach.
-                                </h5>
+                                <h4>Yechimni ishlab chiqamiz</h4>
+                                <h5>Texnik imkoniyatlar, ilg‘or texnologiyalar va sizning sohangizdagi tajriba asosida optimallashtirilgan va innovatsion yechimlarni yaratamiz.</h5>
                             </div>
                         </div>
                         <div className="wrap">
                             <h3>03</h3>
                             <div>
-                                <h4>Understanding Your Needs</h4>
-                                <h5>We begin by thoroughly assessing your requirements and
-                                    objectives to develop a tailored approach.
-                                </h5>
+                                <h4>Natijani yetkazamiz</h4>
+                                <h5>Jarayonni doimiy monitoring qilib, sifat va samaradorlikka e’tibor qaratamiz. Natijada siz kutgan natijalarni o‘z vaqtida yetkazamiz.</h5>
                             </div>
                         </div>
                     </div>
@@ -62,4 +52,4 @@ const OurProcess = () => {
     )
 }
 
-export default OurProcess
+export default OurProcess;

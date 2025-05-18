@@ -9,7 +9,7 @@ const Footer = () => {
                         <div className="wrap">
                             <div>
                                 <div className="logo"><img src="./logo.png" alt="" /></div>
-                                <h1>© 2023 Borche.uz</h1>
+                                <h1>© 2025 Borche.uz</h1>
                                 <div className="socialWrap">
                                     <img src="./fb.png" alt="" />
                                     <img src="./insta.png" alt="" />

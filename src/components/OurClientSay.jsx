@@ -10,89 +10,78 @@ const OurClientSay = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
-                        <div className="img"><img src="./clientSay.png" alt="" /></div>
+                        <div className="img"><img src="./clientSay.png" /></div>
                     </div>
                     <div className="col-lg-6">
                         <h6 className="title">
-                            <span><img src="./setting.png" alt="" /></span>
-                            OUR CLIENT SAY
+                            <span><img src="./setting.png" /></span>
+                            MIJOZLARIMIZ FIKRI
                         </h6>
-                        <h1>What our satisfied clients <span>are saying</span></h1>
-
+                        <br></br>
                         <Swiper
-                        loop={true}
+                            loop={true}
                             autoplay={{
                                 delay: 2500,
                                 disableOnInteraction: false,
                             }}
-                            navigation={true} modules={[Navigation, Autoplay]} className="mySwiper">
+                            navigation={true}
+                            modules={[Navigation, Autoplay]}
+                            className="mySwiper"
+                        >
                             <SwiperSlide>
                                 <h2>
-                                    "The team's attention to detail and commitment to quality
-                                    exceeded our expectations. They delivered on time, and their
-                                    innovative solutions improved our production efficiency by 30%.
-                                    Highly recommended!"
+                                    “Jamoaning diqqat-e’tibori va sifatga bo‘lgan sadoqati bizning kutganimizdan oshdi. Ular belgilangan muddatda ishni topshirishdi va innovatsion yechimlari ishlab chiqarish samaradorligimizni 30% ga oshirdi. Tavsiya qilaman!”
                                 </h2>
-
                                 <div className="imgWrap">
-                                    <img src="./person4.png" alt="" />
+                                    <img src="./person4.png" />
                                     <div>
                                         <h3>Brooklyn Simmons</h3>
-                                        <h4>Homeowner</h4>
+                                        <h4>Uy egasi</h4>
                                     </div>
                                 </div>
-
                             </SwiperSlide>
+
                             <SwiperSlide>
                                 <h2>
-                                    "The team's attention to detail and commitment to quality
-                                    exceeded our expectations. They delivered on time, and their
-                                    innovative solutions improved our production efficiency by 30%.
-                                    Highly recommended!"
+                                    “Jamoaning diqqat-e’tibori va sifatga bo‘lgan sadoqati bizning kutganimizdan oshdi. Ular belgilangan muddatda ishni topshirishdi va innovatsion yechimlari ishlab chiqarish samaradorligimizni 30% ga oshirdi. Tavsiya qilaman!”
                                 </h2>
-
                                 <div className="imgWrap">
-                                    <img src="./person4.png" alt="" />
+                                    <img src="./person4.png" />
                                     <div>
                                         <h3>Brooklyn Simmons</h3>
-                                        <h4>Homeowner</h4>
+                                        <h4>Uy egasi</h4>
                                     </div>
                                 </div>
-
                             </SwiperSlide>
+
                             <SwiperSlide>
                                 <h2>
-                                    "The team's attention to detail and commitment to quality
-                                    exceeded our expectations. They delivered on time, and their
-                                    innovative solutions improved our production efficiency by 30%.
-                                    Highly recommended!"
+                                    “Jamoaning diqqat-e’tibori va sifatga bo‘lgan sadoqati bizning kutganimizdan oshdi. Ular belgilangan muddatda ishni topshirishdi va innovatsion yechimlari ishlab chiqarish samaradorligimizni 30% ga oshirdi. Tavsiya qilaman!”
                                 </h2>
-
                                 <div className="imgWrap">
-                                    <img src="./person4.png" alt="" />
+                                    <img src="./person4.png" />
                                     <div>
                                         <h3>Brooklyn Simmons</h3>
-                                        <h4>Homeowner</h4>
+                                        <h4>Uy egasi</h4>
                                     </div>
                                 </div>
-
                             </SwiperSlide>
                         </Swiper>
                     </div>
 
                     <div className="col-12">
                         <div className="logos">
-                            <img src="./lorem1.png" alt="" />
-                            <img src="./lorem2.png" alt="" />
-                            <img src="./lorem3.png" alt="" />
-                            <img src="./lorem4.png" alt="" />
-                            <img src="./lorem5.png" alt="" />
+                            <img src="./lorem1.png" />
+                            <img src="./lorem2.png" />
+                            <img src="./lorem3.png" />
+                            <img src="./lorem4.png" />
+                            <img src="./lorem5.png" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default OurClientSay
+export default OurClientSay;

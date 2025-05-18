@@ -8,13 +8,12 @@ const FAQ = () => {
                     <div className="col-12">
                         <h6 className="title">
                             <span><img src="./setting.png" alt="" /></span>
-                            FAQS
+                            Savollar va javoblar
                         </h6>
                     </div>
                     <div className="col-12">
                         <div className="topWrap">
-                            <h1>Frequently asked <span>questions</span></h1>
-                            <button className="btn">All FAQs</button>
+                            <h1>Ko‘p so‘raladigan <span>savollar</span></h1>
                         </div>
                     </div>
                 </div>
@@ -26,51 +25,30 @@ const FAQ = () => {
                     <div className="col-lg-6">
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item eventKey="0">
-                                <Accordion.Header>What industries do you serve?</Accordion.Header>
+                                <Accordion.Header>Qaysi sohalarga xizmat ko‘rsatasiz?</Accordion.Header>
                                 <Accordion.Body>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum.
+                                    Biz sanoat, ishlab chiqarish, logistika va avtomatlashtirish kabi ko‘plab sohalarda xizmat ko‘rsatamiz. Har bir mijozga moslashtirilgan echimlarni taklif qilamiz.
                                 </Accordion.Body>
                             </Accordion.Item>
+
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header>How do you ensure product quality?</Accordion.Header>
+                                <Accordion.Header>Mahsulot sifati qanday ta'minlanadi?</Accordion.Header>
                                 <Accordion.Body>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum.
+                                    Mahsulot sifatini yuqori darajada ta'minlash uchun biz zamonaviy texnologiyalar, qat'iy sifat nazorati tizimlari va xalqaro standartlarga asoslangan ishlab chiqarish jarayonlaridan foydalanamiz.
                                 </Accordion.Body>
                             </Accordion.Item>
+
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header>What industries do you serve?</Accordion.Header>
+                                <Accordion.Header>Yetkazib berish muddati qancha?</Accordion.Header>
                                 <Accordion.Body>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum.
+                                    Yetkazib berish muddati loyiha murakkabligi va hajmiga qarab belgilanadi. Odatda, biz mijoz bilan kelishilgan muddat ichida mahsulotni yetkazishni ta'minlaymiz.
                                 </Accordion.Body>
                             </Accordion.Item>
+
                             <Accordion.Item eventKey="3">
-                                <Accordion.Header>How do you ensure product quality?</Accordion.Header>
+                                <Accordion.Header>Hamkorlik qilish jarayoni qanday kechadi?</Accordion.Header>
                                 <Accordion.Body>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum.
+                                    Dastlab, mijoz bilan ehtiyojlar aniqlanadi. So‘ngra, individual taklif ishlab chiqiladi va texnik yechimlar muhokama qilinadi. Shartnoma asosida loyiha boshlanadi va muntazam aloqa orqali barcha bosqichlar nazorat qilinadi.
                                 </Accordion.Body>
                             </Accordion.Item>
                         </Accordion>
