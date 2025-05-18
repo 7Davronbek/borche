@@ -12,17 +12,16 @@ const OurApproach = () => {
                         <div className="col-lg-12 zIndex">
                             <h6 className="title">
                                 <span><img src="./setting.png" alt="" /></span>
-                                OUR APPROACH
+                                YONDASHUVIMIZ
                             </h6>
                         </div>
                         <div className="col-lg-6 zIndex">
-                            <h1>Empowering sustainable <span>growth in industry</span></h1>
+                            <h1>Sanoatda samaradorlik va barqarorlikni birgalikda ta'minlaymiz</h1>
                         </div>
                         <div className="col-lg-6 zIndex">
                             <p>
-                                We provide a wide range of services tailored to meet the unique needs of
-                                modern industries. From precision manufacturing and advanced
-                                automation to custom product design and efficient logistics.
+                                Biz zamonaviy sanoatning o‘ziga xos ehtiyojlariga moslashtirilgan keng ko‘lamli xizmatlarni taqdim etamiz. 
+                                Yuqori aniqlikdagi ishlab chiqarish, ilg‘or avtomatlashtirish, maxsus mahsulot dizayni va samarali logistika xizmatlarini o‘z ichiga oladi.
                             </p>
                         </div>
                     </div>
@@ -41,23 +40,23 @@ const OurApproach = () => {
                                 onSelect={(k) => setKey(k)}
                                 className="mb-3"
                             >
-                                <Tab eventKey="home" title="Home">
+                                <Tab eventKey="home" title="Bosh sahifa">
                                     <div className="row">
                                         <div className="col-lg-6">
-                                            Left lorem
+                                            Chap tomonda matn (left lorem)
                                         </div>
                                         <div className="col-lg-6">
-                                            Right lorem
+                                            O‘ng tomonda matn (right lorem)
                                         </div>
                                     </div>
                                 </Tab>
-                                <Tab eventKey="contact" title="Contact">
+                                <Tab eventKey="contact" title="Aloqa">
                                     <div className="row">
                                         <div className="col-lg-6">
-                                            Left lorem
+                                            Chap tomonda matn (left lorem)
                                         </div>
                                         <div className="col-lg-6">
-                                            Right lorem
+                                            O‘ng tomonda matn (right lorem)
                                         </div>
                                     </div>
                                 </Tab>
@@ -70,4 +69,4 @@ const OurApproach = () => {
     )
 }
 
-export default OurApproach
+export default OurApproach;

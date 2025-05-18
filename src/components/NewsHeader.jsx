@@ -9,7 +9,7 @@ const NewsHeader = () => {
                     <div className="col-12 zIndex">
                         <h1>Yangiliklar</h1>
                         <div className="linkWrap">
-                            <Link to={'/'}>Home</Link>
+                            <Link to={'/'}>Bosh sahifa</Link>
                             <div className="circle"></div>
                             <Link className="active" to={'/news'}>Yangiliklar</Link>
                         </div>

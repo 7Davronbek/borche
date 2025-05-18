@@ -7,11 +7,11 @@ const ContactHeader = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 zIndex">
-                        <h1>Bog’lanish</h1>
+                        <h1>Biz bilan bog'lanish</h1>
                         <div className="linkWrap">
-                            <Link to={'/'}>Home</Link>
+                            <Link to={'/'}>Bosh sahifa</Link>
                             <div className="circle"></div>
-                            <Link className="active" to={'/contacts'}>About Us</Link>
+                            <Link className="active" to={'/contacts'}>Biz bilan bog'lanish</Link>
                         </div>
                     </div>
                 </div>

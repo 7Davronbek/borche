@@ -7,11 +7,11 @@ const AboutUsHeader = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 zIndex">
-                        <h1>About Us</h1>
+                        <h1>Biz haqimizda</h1>
                         <div className="linkWrap">
-                            <Link to={'/'}>Home</Link>
+                            <Link to={'/'}>Bosh sahifa</Link>
                             <div className="circle"></div>
-                            <Link className="active" to={'/about-us'}>About Us</Link>
+                            <Link className="active" to={'/about-us'}>Biz haqimizda</Link>
                         </div>
                     </div>
                 </div>
