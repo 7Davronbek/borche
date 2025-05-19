@@ -1,14 +1,16 @@
 import i18next from "i18next";
 import { useCallback, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { LANGUANGE } from "../locale";
+import { BORCHE_LANGUAGE, LANGUANGE } from "../locale";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+    const location = useLocation();
+    const { t } = useTranslation();
+
     const [showNavbar, setShowNavbar] = useState(true);
     const [isScrolled, setIsScrolled] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
-    const location = useLocation();
 
     const handleScroll = useCallback(() => {
         const scrollY = window.scrollY;
@@ -38,12 +40,11 @@ const Navbar = () => {
 
     const changeLocale = (e) => {
         i18next.changeLanguage(e.target.value);
-        localStorage.setItem("LANGUAGE", e.target.value)
+        localStorage.setItem(BORCHE_LANGUAGE, e.target.value)
     }
 
     const isActive = (path) => location.pathname === path ? 'active' : '';
 
-    const { t } = useTranslation();
     return (
         <>
             <div className={`Navbar ${showNavbar ? 'show' : 'hide'} ${isScrolled ? 'active' : ''}`}>

@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom"
 
 const LatestBlog = () => {
+    const { t } = useTranslation()
     return (
         <div className="LatestBlog">
             <div className="container">
@@ -9,14 +11,14 @@ const LatestBlog = () => {
                     <div className="col-lg-12">
                         <h6 className="title">
                             <span><img src="./setting.png" /></span>
-                            Yangiliklar
+                            {t('latestBlog1')}
                         </h6>
                     </div>
                     <div className="col-lg-6">
-                        <h1>So'nggi yangiliklar</h1>
+                        <h1>{t('latestBlog2')}</h1>
                     </div>
                     <div className="col-lg-6">
-                        <h2>So‘nggi tendensiyalar, innovatsiyalar va sanoat tarmoqlaridagi ekspert fikrlari bilan doimo xabardor bo‘ling</h2>
+                        <h2>{t('latestBlog3')}</h2>
                     </div>
                 </div>
 

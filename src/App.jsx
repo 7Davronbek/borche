@@ -16,7 +16,8 @@ import { ru } from "./locale/ru";
 import { uz } from "./locale/uz";
 import { en } from "./locale/en";
 import { LANGUANGE } from "./locale";
-
+import NewsDetailPage from "./pages/NewsDetailPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
 i18next.use(initReactI18next).init({
   resources: {
     ru: { translation: ru },
@@ -36,7 +37,9 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about-us' element={<AboutUsPage />} />
         <Route path='/news' element={<NewsPage />} />
+        <Route path='/news/:id' element={<NewsDetailPage />} />
         <Route path='/products' element={<ProductsPage />} />
+        <Route path='/product/:id' element={<ProductDetailPage />} />
         <Route path='/contacts' element={<ContactPage />} />
       </Routes>
       <Footer />

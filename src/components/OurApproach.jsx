@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import { useTranslation } from 'react-i18next';
 
 const OurApproach = () => {
     const [key, setKey] = useState('home');
+    const { t } = useTranslation()
     return (
         <>
             <div className="OurApproach">
@@ -12,16 +14,15 @@ const OurApproach = () => {
                         <div className="col-lg-12 zIndex">
                             <h6 className="title">
                                 <span><img src="./setting.png" alt="" /></span>
-                                YONDASHUVIMIZ
+                                {t('approach1')}
                             </h6>
                         </div>
                         <div className="col-lg-6 zIndex">
-                            <h1>Sanoatda samaradorlik va barqarorlikni birgalikda ta'minlaymiz</h1>
+                            <h1>{t('approach2')}</h1>
                         </div>
                         <div className="col-lg-6 zIndex">
                             <p>
-                                Biz zamonaviy sanoatning o‘ziga xos ehtiyojlariga moslashtirilgan keng ko‘lamli xizmatlarni taqdim etamiz. 
-                                Yuqori aniqlikdagi ishlab chiqarish, ilg‘or avtomatlashtirish, maxsus mahsulot dizayni va samarali logistika xizmatlarini o‘z ichiga oladi.
+                                {t('approach3')}
                             </p>
                         </div>
                     </div>
@@ -29,7 +30,7 @@ const OurApproach = () => {
                 <div className="bg"><img src="./serviceBg.png" alt="" /></div>
                 <div className="gradient"></div>
             </div>
-
+{/* 
             <div className="Tabs">
                 <div className="container">
                     <div className="row">
@@ -64,7 +65,7 @@ const OurApproach = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

@@ -1,14 +1,14 @@
-import AboutUs from "../components/AboutUs"
 import AboutUsHeader from "../components/AboutUsHeader"
 import FAQ from "../components/FAQ"
 import OurApproach from "../components/OurApproach"
 import OurProcess from "../components/OurProcess"
+import OurStory from "../components/OurStory"
 
 const AboutUsPage = () => {
     return (
         <>
             <AboutUsHeader />
-            <AboutUs />
+            <OurStory />
             <OurApproach />
             <OurProcess />
             <FAQ />

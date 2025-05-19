@@ -356,6 +356,7 @@ body {
       gap: 10px;
       font-size: 16px;
       line-height: 27.2px;
+      margin-bottom: 25px;
     }
 
     .myBtn {
@@ -455,7 +456,7 @@ body {
           font-size: 20px;
           line-height: 24px;
           color: $black;
-          margin: 28px 0 60px !important;
+          margin: 28px 0 20px !important;
         }
 
         .arrow {
@@ -475,6 +476,7 @@ body {
   }
 
   .OurStory {
+    padding: 80px 0;
     h1 {
       font-weight: 300;
       font-size: 50px;
@@ -1187,6 +1189,132 @@ body {
       font-size: 16px;
       line-height: 27.2px;
       letter-spacing: 0%;
+    }
+  }
+
+  .NewsList {
+    padding: 80px 0;
+
+    .cards {
+      text-align: center;
+      margin-bottom: 30px;
+      display: block;
+
+      h1 {
+        font-weight: 600;
+        margin: 30px 0 25px;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      h2 {
+        font-family: Manrope;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27.2px;
+        color: $primary-color;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .img {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        margin: auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 40px;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+
+      &.big {
+        .img {
+          width: 90%;
+          height: 350px;
+        }
+      }
+
+      &:hover {
+        .img {
+          img {
+            scale: 1.1;
+          }
+        }
+      }
+    }
+
+    .right {
+      height: 450px;
+      overflow-y: auto;
+    }
+  }
+
+  .Loading {
+    font-size: 22px;
+    color: $primary-color;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 50px 0;
+
+    .spinner-border {
+      color: $primary-color;
+    }
+  }
+
+  .NewsDetailPage {
+    padding: 80px 0;
+    text-align: center;
+
+    h3 {
+      margin: 20px 0 10px;
+    }
+  }
+
+  .ProductList {
+    padding: 80px 0;
+
+    .cards {
+      display: block;
+      margin-bottom: 30px;
+
+      h3 {
+        margin: 20px 0 10px;
+      }
+      
+      .img {
+        overflow: hidden;
+
+        img {
+          border-radius: 40px;
+          transition: all .4s ease-in-out;
+        }
+      }
+
+      &:hover {
+
+        .img {
+          img {
+            scale: 1.1;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+
+    &.swiper-pagination-bullet-active {
+      background-color: $primary-color;
     }
   }
 }

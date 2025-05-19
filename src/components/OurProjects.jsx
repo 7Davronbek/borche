@@ -1,5 +1,7 @@
+import { useTranslation } from "react-i18next"
 
 const OurProjects = () => {
+    const { t } = useTranslation()
     return (
         <div className="OurProjects">
             <div className="container">
@@ -7,14 +9,14 @@ const OurProjects = () => {
                     <div className="col-lg-12">
                         <h6 className="title">
                             <span><img src="./setting.png" alt="" /></span>
-                            BIZNING MAHSULOTLAR
+                            {t('ourProject1')}
                         </h6>
                     </div>
                     <div className="col-lg-6">
-                        <h1>Yangi mahsulotlar</h1>
+                        <h1>{t('ourProject2')}</h1>
                     </div>
                     <div className="col-lg-6">
-                        <h2>Bizning yangi mahsulotlarimiz — sizning biznesingizni keyingi bosqichga olib chiqadigan innovatsion yechimdir!</h2>
+                        <h2>{t('ourProject3')}</h2>
                     </div>
                 </div>
                 <div className="row cardsWrap">
@@ -22,16 +24,16 @@ const OurProjects = () => {
                         <div className="cards">
                             <div className="img">
                                 <img src="./projects1.png" alt="" />
-                                <h5>Texnologiya</h5>
+                                <h5>{t('ourProject4')}</h5>
                             </div>
-                            <h3>Aqlli nazorat tizimi</h3>
+                            <h3>{t('ourProject5')}</h3>
                         </div>
                     </div>
-                    <div className="col-lg-6 mb-5">
+                    {/* <div className="col-lg-6 mb-5">
                         <div className="cards">
                             <div className="img">
                                 <img src="./projects1.png" alt="" />
-                                 <h5>Sanoat uskunalari</h5>
+                                <h5>{t('ourProject6')}</h5>
                             </div>
                             <h3>Energiya tejovchi kompressor</h3>
                         </div>
@@ -53,7 +55,7 @@ const OurProjects = () => {
                             </div>
                             <h3>Total Quality Management Implementation</h3>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

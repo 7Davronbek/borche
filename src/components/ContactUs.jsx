@@ -1,4 +1,20 @@
+import { useState } from "react"
+import { useTranslation } from "react-i18next"
+import httpClient from "../shared/axios"
+import { toast } from "react-toastify"
+
 const ContactUs = () => {
+    const [full_name, setFullName] = useState('')
+    const [phone_number, setPhoneNumber] = useState('')
+    const { t } = useTranslation()
+
+    const handleForm = async (e) => {
+        e.preventDefault()
+        await httpClient.post('/bot/message/', { full_name, phone_number })
+        toast.success("Success")
+        setPhoneNumber('')
+        setFullName('')
+    }
     return (
         <div className="ContactUs">
             <div className="container">
@@ -6,30 +22,30 @@ const ContactUs = () => {
                     <div className="col-lg-6">
                         <h6 className="title">
                             <span><img src="./setting.png" alt="" /></span>
-                            BIZ BILAN BOG‘LANING
+                            {t('contactUs1')}
                         </h6>
-                        <h1>Hoziroq qo'ng'iroq qiling</h1>
-                        <h2>Har qanday savol, qo‘llab-quvvatlash yoki sanoat ehtiyojlaringiz haqida suhbatlashish uchun biz bilan bog‘laning.</h2>
+                        <h1>{t('contactUs2')}</h1>
+                        <h2>{t('contactUs3')}</h2>
 
                         <div className="wrap">
                             <div className="img"><img src="./contact1.png" alt="Telefon raqam" /></div>
                             <div>
-                                <h3>Telefon</h3>
+                                <h3>{t('contactUs4')}</h3>
                                 <a href="tel:+1809120670">+1 809 120 670</a>
                             </div>
                         </div>
                         <div className="wrap">
                             <div className="img"><img src="./contact2.png" alt="Email" /></div>
                             <div>
-                                <h3>Elektron pochta</h3>
+                                <h3>{t('contactUs5')}</h3>
                                 <a href="mailto:info@domainname.com">info@borche.uz</a>
                             </div>
                         </div>
                         <div className="wrap mb-0">
                             <div className="img"><img src="./contact3.png" alt="Manzil" /></div>
                             <div>
-                                <h3>Manzilimiz</h3>
-                                <a href="#">Taxtapul ko'chasi 348, Toshkent, O'zbekiston</a>
+                                <h3>{t('contactUs6')}</h3>
+                                <a href="#">{t('contactUs7')}</a>
                             </div>
                         </div>
                     </div>
@@ -49,13 +65,12 @@ const ContactUs = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-6 mx-auto">
-                        <div className="contactWrap">
-                            <h4>Bizga xabar qoldiring</h4>
-                            <input placeholder="Ismingizni kiriting" type="text" className="form-control" />
-                            <input placeholder="Familiyangizni kiriting" type="text" className="form-control" />
-                            <input placeholder="Telefon raqamingizni kiriting" type="text" className="form-control" />
-                            <button className="btn">Jo'natish</button>
-                        </div>
+                        <form onSubmit={handleForm} className="contactWrap">
+                            <h4>{t('contactUs8')}</h4>
+                            <input value={full_name} onChange={e => setFullName(e.target.value)} required placeholder={t('contactUs9')} type="text" className="form-control" />
+                            <input value={phone_number} onChange={e => setPhoneNumber(e.target.value)} required placeholder={t('contactUs10')} type="text" className="form-control" />
+                            <button type="submit" className="btn">{t('contactUs11')}</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://back.meridiam.ru/api/v1";
+const BASE_URL = "https://api.borche.uz/api";
 
 const httpClient = axios.create({
   baseURL: BASE_URL,
