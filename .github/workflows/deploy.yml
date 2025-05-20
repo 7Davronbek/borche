@@ -3,7 +3,7 @@ name: Deploy Frontend to Server
 on:
   push:
     branches:
-      - main  # or "master", depending on your branch name
+      - main
 
 jobs:
   deploy:
@@ -24,7 +24,7 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Upload via SSH
+    - name: Upload build to server via SSH
       uses: appleboy/scp-action@v0.1.7
       with:
         host: ${{ secrets.SSH_HOST }}
